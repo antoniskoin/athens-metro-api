@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 from flask_restful import Api
-from MetroData import FirstAndLast
+from MetroData import FirstAndLast, latest_news
 from MetroData import TripDuration
 from MetroData import TripFrequencies
 
@@ -16,6 +16,7 @@ def index():
 api.add_resource(FirstAndLast.FirstLast, '/firstlast')
 api.add_resource(TripDuration.TripDuration, '/duration')
 api.add_resource(TripFrequencies.TripFrequencies, '/frequency')
+api.add_resource(latest_news.News, '/news')
 
 if __name__ == "__main__":
     app.run()
