@@ -1,22 +1,71 @@
 <html lang="en">
-	<head>
-		<title>Athens Transportation API</title>
-		<style>
-			body {
-			  font-family: 'Courier New', monospace;
-			}
-		</style>
-	</head>
-	<body>
-		<h3>API Endpoints</h3>
-		<hr>
-		<ul>
-		  <li><a href="https://athens-metro.herokuapp.com/firstlast" target="_blank">/firstlast</a></li>
-		  <li><a href="https://athens-metro.herokuapp.com/frequency" target="_blank">/frequency</a></li>
-		  <li><a href="https://athens-metro.herokuapp.com/duration" target="_blank">/duration</a></li>
-		  <li><a href="https://athens-metro.herokuapp.com/news" target="_blank">/news</a></li>
-		</ul>
-		<hr>
-		<p>Information retrieved from the official <a href="http://www.stasy.gr" target="_blank">Athens Metro</a> website.</p>
-	</body>
+<head>
+    <title>Athens Transportation API</title>
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<div class="d-flex justify-content-center">
+    <img src="logo.png" class="img-fluid" alt="Website Logo">
+</div>
+<div class="d-flex justify-content-center p-3">
+    <h2>Athens Metro API Endpoints</h2>
+</div>
+<hr>
+<div class="d-flex flex-wrap align-items-stretch justify-content-center p-3">
+    <div class="card border-dark mb-3" style="max-width: 18rem; margin: 3px">
+        <div class="card-header">Endpoint</div>
+        <div class="card-body text-dark">
+            <h5 class="card-title">
+                <a class="text-decoration-none text-blue" href="https://athens-metro.herokuapp.com/firstlast">First and
+                    Last Metro</a>
+            </h5>
+            <p class="card-text">Get information about the first and last metro of the day.</p>
+        </div>
+    </div>
+    <div class="card border-dark mb-3" style="max-width: 18rem; margin: 3px">
+        <div class="card-header">Endpoint</div>
+        <div class="card-body text-dark">
+            <h5 class="card-title">
+                <a class="text-decoration-none text-blue" href="https://athens-metro.herokuapp.com/frequency">Metro
+                    Frequency</a>
+            </h5>
+            <p class="card-text">Get information about the frequency of metro arrivals.</p>
+        </div>
+    </div>
+    <div class="card border-dark mb-3" style="max-width: 18rem; margin: 3px">
+        <div class="card-header">Endpoint</div>
+        <div class="card-body text-dark">
+            <h5 class="card-title">
+                <a class="text-decoration-none text-blue" href="https://athens-metro.herokuapp.com/duration">Trip
+                    Duration</a>
+            </h5>
+            <p class="card-text">Get information about the duration of the trip from one stop to another.</p>
+        </div>
+    </div>
+    <div class="card border-dark mb-3" style="max-width: 18rem; margin: 3px">
+        <div class="card-header">Endpoint</div>
+        <div class="card-body text-dark">
+            <h5 class="card-title">
+                <a class="text-decoration-none text-blue" href="https://athens-metro.herokuapp.com/news">Latest
+                    news</a>
+            </h5>
+            <p class="card-text">Get all the latest news regarding the metro (e.g. strikes)</p>
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="d-flex justify-content-center p-5">
+    <p>Information retrieved from the official <a href="http://www.stasy.gr" target="_blank">Athens Metro</a> website.
+    </p>
+</div>
+
+<div class="d-flex justify-content-center p-3">
+    <a href="https://github.com/antoniskoin/athens-metro-api" target="_blank">
+        <img src="github.png" class="img-fluid" alt="Github">
+    </a>
+</div>
+</body>
 </html>
