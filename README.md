@@ -1,7 +1,7 @@
 # Athens Metro API
 A simple API that allows you to get information about the Athens Metro.
 
-# Requirements
+## Requirements
 ```text
 Flask_RESTful
 Flask
